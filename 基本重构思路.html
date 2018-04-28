@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>基本重构思路</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/基本重构思路/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/基本重构思路/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u0" class="ax_default flow_shape">
+        <div id="u0_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u1" class="text" style="visibility: visible;">
+          <p><span>战略层</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u2" class="ax_default _文本段落">
+        <img id="u2_img" class="img " src="images/基本重构思路/u2.png"/>
+        <!-- Unnamed () -->
+        <div id="u3" class="text" style="visibility: visible;">
+          <p><span>重构医生工作台整体使用模式和交互结构，建立“1+x”理念，“1”= 通用性工具，“x”= 专项管理赋能包；专项管理赋能包集：方法、流程、知识、设备于一体，让基层医护人员具备专项管理能力</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u4" class="ax_default _文本段落">
+        <img id="u4_img" class="img " src="images/基本重构思路/u4.png"/>
+        <!-- Unnamed () -->
+        <div id="u5" class="text" style="visibility: visible;">
+          <p><span>&#149; 对医生：提升整个工作台的易理解性，操作流程与健康管理理念一致</span></p><p><span>&#149; 对慈云：建立一个可扩展的“插件式”产品概念，可持续扩展各种专项管理赋能包，可对不同的客户开放不同的赋能包 </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u6" class="ax_default flow_shape">
+        <div id="u6_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7" class="text" style="visibility: visible;">
+          <p><span>范围层</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u8" class="ax_default _文本段落">
+        <img id="u8_img" class="img " src="images/基本重构思路/u8.png"/>
+        <!-- Unnamed () -->
+        <div id="u9" class="text" style="visibility: visible;">
+          <p><span>&#149; 功能规格：当前医生工作台的功能范围不变，但将功能重新按“1+x”思路分类为：通用性工具类和属于某专项管理类</span></p><p><span>&#149; 内容建设：当前的知识库内容，也按照“1+x”模式进行分类或标签化</span></p><p><span>&#149; 完成高血压专项管理赋能包样板</span></p><p><span>&#149; 不考虑让机构自定义“x”，所有“x”为平台统一定义、输出给机构使用；不考虑用户健康档案的分级授权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u10" class="ax_default _文本段落">
+        <img id="u10_img" class="img " src="images/基本重构思路/u10.png"/>
+        <!-- Unnamed () -->
+        <div id="u11" class="text" style="visibility: visible;">
+          <p><span>需求范围按版本迭代规划，V4.1.0版，首先做到在现有功能下，重构成“1+x”模式，完成一个“x1”，x1 = 高血压专项管理赋能包，后续版本迭代再持续增加其他“x”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12" class="ax_default flow_shape">
+        <div id="u12_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u13" class="text" style="visibility: visible;">
+          <p><span>结构层</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u14" class="ax_default _文本段落">
+        <img id="u14_img" class="img " src="images/基本重构思路/u14.png"/>
+        <!-- Unnamed () -->
+        <div id="u15" class="text" style="visibility: visible;">
+          <p><span>结构层关注的：交互设计和信息架构，是这次改版的核心。理解健康管理方法论，理解医生的工作方式、行为、思考方式，是最重要的基础</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u16" class="ax_default _文本段落">
+        <img id="u16_img" class="img " src="images/基本重构思路/u16.png"/>
+        <!-- Unnamed () -->
+        <div id="u17" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">交互设计 —— 思考交互过程时，要关注的几个重点：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&#149; 健康管理的总体抽象过程是：“评估 -&gt; 干预 -&gt; 监测 -&gt; 总结”，这个过程也是医生理解的工作流程，要在交互设计第一维度体现</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&#149; 每个专项管理，有自己独立的具体流程、内容模板、知识库、管理动作等，按高内聚原则，内容和流程一体化设计；各专项管理包间独立分开，可作为配置项进行授权使用</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&#149; 通用性的工具，是另一个组织维度，要方便医生使用，又不与专项管理包维度冲突</span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">信息架构 —— 几个维度的因素：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&#149;</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;"> </span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">知识库组织：各类知识库的素材或知识类目，要考虑基于专项包的标签化，以能够支持不同专项包，知识不同，不相关的知识不出现</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&#149; 管理对象的组织：工作组内的管理对象集，与特定专项管理包下的管理对象集，是什么样的关系？怎么分诊到不同的管理包中？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u18" class="ax_default flow_shape">
+        <div id="u18_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u19" class="text" style="visibility: visible;">
+          <p><span>框架层</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u20" class="ax_default _文本段落">
+        <img id="u20_img" class="img " src="images/基本重构思路/u2.png"/>
+        <!-- Unnamed () -->
+        <div id="u21" class="text" style="visibility: visible;">
+          <p><span>框架层关注：页面的布局、导航、界面元素等；对本次改版，在符合结构层方法论前提下，考虑几个医生经常提到的点：</span></p><p><span>&#149; 大部分医生喜欢在一个界面上完成所有事，尽量减少窗口切换</span></p><p><span>&#149; 其他？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22" class="ax_default _图片">
+        <img id="u22_img" class="img " src="images/基本重构思路/u22.png"/>
+        <!-- Unnamed () -->
+        <div id="u23" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
