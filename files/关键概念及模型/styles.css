@@ -133,13 +133,14 @@
   width:106px;
   height:71px;
   background:inherit;
-  background-color:rgba(102, 204, 255, 1);
+  background-color:rgba(0, 128, 0, 1);
   border:none;
-  border-radius:0px;
+  border-radius:3px;
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
   font-size:14px;
+  color:#FFFFFF;
 }
 #u34 {
   position:absolute;
@@ -148,6 +149,7 @@
   width:106px;
   height:71px;
   font-size:14px;
+  color:#FFFFFF;
 }
 #u35 {
   position:absolute;

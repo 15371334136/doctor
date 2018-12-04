@@ -92,6 +92,9 @@
 }
 ._形状 {
 }
+._文本段落1 {
+  text-align:left;
+}
 ._图片 {
   color:#000000;
 }
@@ -106,6 +109,14 @@
 }
 .label {
   font-size:14px;
+  text-align:left;
+}
+._文本框 {
+  font-family:'Arial Normal', 'Arial';
+  font-weight:normal;
+  font-style:normal;
+  font-size:12px;
+  color:#666666;
   text-align:left;
 }
 .text_field {
